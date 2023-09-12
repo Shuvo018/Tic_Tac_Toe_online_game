@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idMainPageUserNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="axis "
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:layout_toLeftOf="@id/idUserProfileImageView"
+        android:layout_marginEnd="40sp"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:id="@+id/idUserProfileImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/kunicon"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/idTVHead1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Tic Tac Toe"
+
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/idTVHead2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Game"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_below="@id/idTVHead1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/idBtnSinglePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="single player"
+        android:background="#AEAEAE"
+        android:textColor="@color/white"
+        android:layout_below="@id/idTVHead2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+    <Button
+        android:id="@+id/idBtnMultiPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multi player"
+        android:background="#AEAEAE"
+        android:textColor="@color/white"
+        android:layout_below="@id/idBtnSinglePlayer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+
+</RelativeLayout>
